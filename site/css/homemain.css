@@ -1,6 +1,6 @@
 .main{
   width: 50%;
-  height: 40%;
+  height: 60%;
   background-color: #f2f2f2;
 
   border-radius: 3.8px;
@@ -15,4 +15,26 @@
   right: 0;
 
   margin: auto;
+}
+.main button{
+  width: 40%;
+  height: 13%;
+
+  position: absolute;
+
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  margin: auto;
+
+  border-radius: 5px;
+  border-width: 0;
+
+  line-height: 60%;
+  font-size: 150%;
+  color: white;
+
+  background-color: blue;
 }
