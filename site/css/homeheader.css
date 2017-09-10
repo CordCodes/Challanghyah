@@ -1,0 +1,50 @@
+/*Importing Fonts*/
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,400');
+/*Resetting the default margins*/
+body,html{margin:0;padding:0;}
+/*Making the background image*/
+body{
+  background-image: url("../img/Challenges-Background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/*Resetting the unordered list and list attributes*/
+ul,li{
+  list-style: none;
+  list-style-type: none;
+  padding:0;
+  margin: 0;
+}
+/*Designing the list attribute*/
+li{
+  display: inline-block;
+  font-size: 29px;
+  color: white;
+  font-family: 'Roboto',sans-serif;
+}
+/*Setting the items on the header.*/
+li.titleli{
+  float: left;
+  margin: 2px 0px 0px 25px;
+}
+li.login{
+  float: right;
+  margin: 2px 25px 0px 0px;
+  font-size: 28px;
+  font-family: 'Roboto',sans-serif;
+  font-weight: 100;
+}
+/*Making a useless crappy "animation" for on:hover of the "Login"*/
+li.login:hover{
+  font-weight: normal;
+}
+/*Making the actual navigation bar.*/
+ul{
+  background-color: #929292;
+  width: 100%;
+  height: 42px;
+  line-height: 42px;
+}
+ul a{
+  color: white;
+}

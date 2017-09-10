@@ -1,0 +1,18 @@
+.main{
+  width: 50%;
+  height: 40%;
+  background-color: #f2f2f2;
+
+  border-radius: 3.8px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: black;
+
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  margin: auto;
+}
