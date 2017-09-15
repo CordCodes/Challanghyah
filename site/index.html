@@ -5,19 +5,16 @@
     <title>Challanghyah</title>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
-    <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-    <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <style>*:focus{outline: none;}</style>
+    <style>*:focus{outline: none;}#signup,#login {max-width: 550px;border-radius: 4px;transform: translateY(-50px);transition: all .33s;}.fancybox-slide--current #signup,.fancybox-slide--current #login {transform: translateY(0);}</style>
 
-    <link href="./lightbox2/src/css/lightbox.css" rel="stylesheet">
     <link href="./css/cookiewarning.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.css" />
   </head>
   <body>
     <div class="container-fluid">
@@ -27,8 +24,8 @@
             <a class="navbar-brand" href="#">Challanghyah</a>
           </div>
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            <li><a data-fancybox data-src="#signup" href="javascript:;"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+            <li><a data-fancybox data-src="#login" href="javascript:;"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
           </ul>
         </div>
       </nav><br/>
@@ -42,16 +39,22 @@
         </div>
         <br><br>
       </div>
+      <a href="hi.html" data-lightbox="image-1" data-title="My caption">Image #1</a>
     </div>
-
-
 
     <div class="cookiewarning bg-warning">
   		<h3>Eat up a cookie!</h3>
   		<p>This website may use cookies, to learn more; please view our <a href="#">Privacy Policy</a>&nbsp;&nbsp;&nbsp;<span class="btn btn-warning btn-xl">Okay</span></p>
     </div>
 
+    <div style="display: none;" id="signup" class="container">
+      <h1>Sign Up:</h1>
+    </div>
+    <div style="display: none;" id="login" class="container">
+      <h1>Login:</h1>
+    </div>
+
     <script type="text/javascript" src="./js/cookiewarning.js"></script>
-    <script type="text/javascript" src="./lightbox2/src/js/lightbox.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.js"></script>
   </body>
 </html>
