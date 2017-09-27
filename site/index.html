@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Challanghyah</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>*:focus{outline: none;}#signup,#login {max-width: 550px;border-radius: 4px;transform: translateY(-50px);transition: all .33s;}.fancybox-slide--current #signup,.fancybox-slide--current #login {transform: translateY(0);}input:-webkit-autofill,input:-webkit-autofill:hover,input:-webkit-autofill:focus,input:-webkit-autofill:active {background-color: #FFFFFF !important;color: #555 !important;-webkit-box-shadow: 0 0 0 1000px white inset !important;-webkit-text-fill-color: #555555 !important;}</style>
+    <style>
+      .btn.lisu{background-color: #00bbe5;border-color: #059cad;border-width: 1px;}
+      .btn.lisu:focus{outline:none;background-color: #059cad;border-color: #047987;border-width: 1px;}
+      .btn.lisu:active{outline:none;background-color: #059cad;border-color: #047987;border-width: 1px;}
+      .btn.lisu:hover{outline:none;background-color: #059cad;border-color: #047987;border-width: 1px;}
+    </style>
+
+    <link href="./css/cookiewarning.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.css" />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <nav class="navbar navbar-inverse" style="border-top-right-radius: 0px;border-top-left-radius: 0px;border-bottom-right-radius: 7px;border-bottom-left-radius: 7px;">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">Challanghyah</a>
+          </div>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a data-fancybox data-src="#signup" href="javascript:;"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+            <li><a data-fancybox data-src="#login" href="javascript:;"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+          </ul>
+        </div>
+      </nav><br/>
+      <div class="page-header">
+        <h1>What is Challanghyah?</h1>
+        <div class="container" style="margin-left:0;">
+          <blockquote>
+            <p>Challanghyah is a website to challenge you daily, weekly or even yearly to do things you usually wouldn't do. Challanghyah can be used from using it for your workout, not having sugar for a week, to stopping smoking. The possibilities are endless! And it is <kbd>100% FREE<span class="text-danger"> <strong>*</strong></span></kbd></p>
+          </blockquote>
+          <span class="text-danger"><strong>* Free while not fully released.</strong></span>
+        </div>
+        <br><br>
+      </div>
+    </div>
+
+    <div class="cookiewarning bg-warning">
+  		<h3>Eat up a cookie!</h3>
+  		<p>This website may use cookies, to learn more; please view our <a href="#">Privacy Policy</a>&nbsp;&nbsp;&nbsp;<span class="btn btn-warning btn-xl">Okay</span></p>
+    </div>
+
+    <div style="display: none;" id="signup" class="container">
+      <form action="index.html" method="post">
+        <h1>Sign Up:</h1><hr>
+        <div class="form-group">
+          <label for="usr">Full Name:</label>
+          <input type="text" class="form-control" id="usr" style="" required>
+        </div>
+        <div class="form-group">
+          <label for="usr">Email:</label>
+          <input type="email" class="form-control" id="usr" style="" required>
+        </div>
+        <div class="form-group">
+          <label for="usr">Username:</label>
+          <input type="text" class="form-control" id="usr" style="" required>
+        </div>
+        <div class="form-group">
+          <label for="pwd">Password:</label>
+          <input type="password" class="form-control" id="pwd" required>
+        </div>
+        <div class="form-group">
+          <label for="pwd">Confirm Password:</label>
+          <input type="password" class="form-control" id="pwd" required>
+        </div>
+        <button type="submit" name="loginbtn" class="btn btn-primary btn-xl lisu" style="width:100%">Login</button>
+      </form>
+    </div>
+    <div style="display: none;" id="login" class="container">
+      <form action="index.html" method="post">
+        <h1>Login:</h1><hr>
+        <div class="form-group">
+          <label for="usr">Username:</label>
+          <input type="text" class="form-control" id="usr" style="" required>
+        </div>
+        <div class="form-group">
+          <label for="pwd">Password:</label>
+          <input type="password" class="form-control" id="pwd" required>
+        </div>
+        <button type="submit" name="loginbtn" class="btn btn-primary btn-xl lisu" style="width:100%">Login</button>
+      </form>
+    </div>
+
+    <script type="text/javascript" src="./js/cookiewarning.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.js"></script>
+  </body>
+</html>
