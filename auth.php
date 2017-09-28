@@ -12,7 +12,7 @@
       $realpassword = password_verify($password, $row['password']);
       if ($realpassword){
         $_SESSION['loggeduser'] = row['username'];
-        header("location:./dashboard.php");
+        header("location:./dashboard/index.php");
       }
 
     }elseif (isset($_POST['signup'])) {

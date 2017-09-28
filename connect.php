@@ -1,7 +1,7 @@
 <?php
   $host = "mysql5.gear.host";
   $username = "challanghyahdb";
-  $password = "<--password-->";
+  $password = "Nw64F?DDv~oo";
   $database = "challanghyahdb";
 
   $conn = mysqli_connect($host,$username,$password,$database);
