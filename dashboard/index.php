@@ -1,5 +1,5 @@
 <?php
-  include("session.php");
+  include_once("../session.php");
 ?>
 <!DOCTYPE html>
 <html>
@@ -9,6 +9,6 @@
   </head>
   <body>
     yay it worked!!!!!
-    <a href="./logout.php">Logout</a>
+    <a href="../logout.php">Logout</a>
   </body>
 </html>
