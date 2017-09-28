@@ -53,7 +53,7 @@
     </div>
 
     <div style="display: none;" id="signup" class="container">
-      <form action="index.html" method="post">
+      <form action="auth.php" method="post" name="signup">
         <h1>Sign Up:</h1><hr>
         <div class="form-group">
           <label for="usr">Full Name:</label>
@@ -75,20 +75,22 @@
           <label for="pwd">Confirm Password:</label>
           <input type="password" class="form-control" id="pwd" required>
         </div>
+        <input type="hidden" name="signup" value=""/>
         <button type="submit" name="loginbtn" class="btn btn-primary btn-xl lisu" style="width:100%">Login</button>
       </form>
     </div>
     <div style="display: none;" id="login" class="container">
-      <form action="index.html" method="post">
+      <form action="auth.php" method="post" name="login">
         <h1>Login:</h1><hr>
         <div class="form-group">
           <label for="usr">Username:</label>
-          <input type="text" class="form-control" id="usr" style="" required>
+          <input type="text" name="uname" class="form-control" id="usr" style="" required>
         </div>
         <div class="form-group">
           <label for="pwd">Password:</label>
-          <input type="password" class="form-control" id="pwd" required>
+          <input type="password" name="password" class="form-control" id="pwd" required>
         </div>
+        <input type="hidden" name="login" value=""/>
         <button type="submit" name="loginbtn" class="btn btn-primary btn-xl lisu" style="width:100%">Login</button>
       </form>
     </div>

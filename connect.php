@@ -1,11 +1,11 @@
 <?php
   $host = "mysql5.gear.host";
   $username = "challanghyahdb";
-  $password = "Nw64F?DDv~oo";
+  $password = "<--password-->";
   $database = "challanghyahdb";
 
-  mysqli_connect($host,$username,$password,$database);
-  if (mysqli_connect_errno()) {
-    echo "Failed to connect to MySQL: " . mysqli_connect_error();
+  $conn = mysqli_connect($host,$username,$password,$database);
+  if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
   }
 ?>
