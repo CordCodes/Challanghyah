@@ -36,4 +36,6 @@ VALUES ('$fullname', '$email', '$username','$hashedPassword')";
   } else {
     header("location:./index.html");
   }
+
+  
 ?>
